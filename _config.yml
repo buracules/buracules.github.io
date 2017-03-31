@@ -1,0 +1,52 @@
+### your site title here
+
+title: Blog - Burak Üstün
+baseurl: # name of the repository
+email: your@email.com
+
+
+
+highlighter: rouge
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+kramdown:
+  input: GFM
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+### exclude the instructions / write-up in the README.md
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+
+# Tracker
+analytics: UA-79547237-1
+
+# Comments
+disqus-shortname: burakustn
+permalink: /:title.html
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+
+sass:
+ style: compressed
+
+
+
+
+gems: [jekyll-seo-tag, jekyll-paginate ,gemoji, jekyll-sitemap]

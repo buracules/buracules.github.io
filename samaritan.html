@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="CONNECTION ESTABLISHED">
+		<meta name="keywords" content="Person of Interest,Samaritan,Machine,ASI,AI,UI,Greer">
+		<meta name="viewport" content="width=device-width, initial-scale=0.6">
+		<link rel="shortcut icon" href="static/favicon.ico">
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+		<link type="text/css" href="static/main.css" rel="stylesheet">
+		<script type="text/javascript" src="static/main.js"></script>
+		<title>Samaritan</title>
+		<script>
+			$(document).ready(function() {
+				$(document.body).on("selectstart", function() {
+					return false;
+				});
+
+				var audio0 = $("#audio0")[0];
+				var audio1 = $("#audio1")[0];
+
+				audioSetTimeEvents(audio0, {
+					"5": [null, "showSubtitle", ["Receiving the government feeds now, sir.", 2500]],
+					"8.1": [null, "showSubtitle", ["Then", 800]],
+					"9.4": [null, "showSubtitle", ["by all means,", 1000]],
+					"11": [null, "showSubtitle", ["let there be", 1000]],
+					"12.5": [null, "showSubtitle", ["life.", 500]],
+					"13.2": [samaritan, "showMessageBox", ["TOTAL ACCESS ACHIEVED"]],
+					"13.5": function() {
+						document.title = "Samaritan";
+					},
+					"15": [samaritan, "showMessageBox", ["TOTAL ACCESS ACHIEVED", "ASSIMILATING DATA"]],
+					"24": [samaritan, "showMessageBox", ["TOTAL ACCESS ACHIEVED", "DATA ACQUISITION"]],
+					"25": function() {
+						tryPlayAudio(audio1, 0, 5);
+					}
+				});
+				audioSetTimeEvents(audio1, {
+					"11": [samaritan, "hideMessageBox"],
+					"14": [null, "showSubtitle", ["Good morning."]],
+					"17": [samaritan, "textAnimate", ["WHAT ARE YOUR COMMANDS ?"]],
+					"20": [null, "showSubtitle", ["I assure you, it's quite the other way around.", 2000]],
+					"23": [null, "showSubtitle", ["The question is, what,"]],
+					"25": [null, "showSubtitle", ["my dear Samaritan,"]],
+					"27": [null, "showSubtitle", ["are your commands for us?", 3000]],
+					"31": [samaritan, "enlarge", ["CALCULATING RESPONSE"]],
+					"40": function() {
+						$("#subtitle").css("display", "none");
+						$("#info").css("display", "");
+						setTimeout(function() {
+							$("#info").css("opacity", "1");
+						}, 100);
+						setTimeout(playEasterEgg, 10000);
+					}
+				});
+				tryPlayAudio(audio0, 0, 5);
+
+				function playEasterEgg() {
+					samaritan.textAnimate("");
+					$("#info").css("opacity", "0");
+					setTimeout(function() {
+						$(document.body).removeClass("color-invert");
+					}, 2000);
+					setTimeout(function() {
+						samaritan.textAnimate("I WILL PROTECT YOU NOW");
+					}, 5000);
+					setTimeout(function() {
+						$("#info").css("opacity", "1").children(":first").remove();
+					}, 12000);
+				}
+
+				setTimeout(function() {
+					samaritan.textBlack("CONNECTION ESTABLISHED");
+				}, 3000);
+			});
+		</script>
+	</head>
+
+	<body class="color-invert">
+		<div id="samaritan" class="mode-text">
+			<div class="text hidden">-</div>
+			<div class="line"></div>
+			<div class="arrow arrow-animation"></div>
+			<div class="message-box">
+				<div class="message-box-title"></div>
+				<div class="message-box-text"></div>
+				<div class="message-box-footer"></div>
+			</div>
+		</div>
+		<div id="subtitle" style="opacity: 0;"></div>
+		<div id="info" style="display: none; opacity: 0;">
+			<p style="font-size: 80%;"><a href="javascript: window.location.reload();">Replay</a></p>
+		</div>
+		<audio id="audio0">
+			<source src="static/audio/audio0.ogg" type="audio/ogg">
+			<source src="static/audio/audio0.wav" type="audio/wav">
+		</audio>
+		<audio id="audio1">
+			<source src="static/audio/audio1.ogg" type="audio/ogg">
+			<source src="static/audio/audio1.wav" type="audio/wav">
+		</audio>
+	</body>
+
+</html>

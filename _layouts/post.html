@@ -1,0 +1,16 @@
+---
+layout: defaultblog
+---
+<h1 class="post-headline">{{page.title}}</h1> 
+
+{{content}}
+<br/>
+<div class="meta"><span><p>{{page.date | date: '%B %d, %Y'}}</p></span></div>
+<div><span><p class="p-custom">{{page.author}}</p></span></div>
+<br/>
+<!-- Comments only for posts -->
+{% if page.path contains '_posts' %}
+    {% if site.disqus-shortname %}
+        {% include disqus.html %}
+    {% endif %}
+{% endif %}
