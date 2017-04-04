@@ -2,7 +2,7 @@
 layout: postwithimage
 title:  "Famous Quotes"
 date:   2017-02-19
-categories: "Misc."
+categories: "Miscellaneous"
 fpath: "assets/images/Posts/quotes.jpeg"
 ---
 
