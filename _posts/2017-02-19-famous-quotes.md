@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: postwithimage
 title:  "Famous Quotes"
 date:   2017-02-19
 categories: "Misc."
+fpath: "assets/images/Posts/quotes.jpeg"
 ---
 
 | Quote        | Author           | 

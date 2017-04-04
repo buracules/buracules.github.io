@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: postwithimage
 title:  "Alamofire"
 author: "Burak Üstün"
 date:   2017-03-24
 categories: "Swift"
+fpath: "assets/images/Posts/Alamofire.jpg"
 ---
 
 #### Örnek Class : [Post.swift]

@@ -1,6 +1,6 @@
 ---
 layout: postwithimage
-title:  "Notes"
+title:  "Code Samples"
 date:   2017-02-16
 categories: Objective-C
 fpath: "http://allthingsiosandmac.ca/iPhone%206%20with%20MBPro%201800x1200.jpg"
