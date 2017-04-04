@@ -695,7 +695,7 @@ h3 > .fa {
 }
 
 .portfolio-item-description {
-	background: rgba(255, 255, 255, .85);
+	background: rgba(245, 245, 245, .95);
 	position: absolute;
 	right: 0;
 	bottom: -70px;
