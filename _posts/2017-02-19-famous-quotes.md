@@ -2,7 +2,7 @@
 layout: post
 title:  "Famous Quotes"
 date:   2017-02-19
-categories: "Çeşitli"
+categories: "Misc."
 ---
 
 | Quote        | Author           | 

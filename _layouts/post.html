@@ -1,16 +1,186 @@
 ---
-layout: defaultblog
+layout: compress
 ---
-<h1 class="post-headline">{{page.title}}</h1> 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="{{site.baseurl}}/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <title>{{page.title}}</title>
+  <link rel="icon" href="{{site.baseurl}}/assets/images/logo.png">
 
-{{content}}
-<br/>
-<div class="meta"><span><p>{{page.date | date: '%B %d, %Y'}}</p></span></div>
-<div><span><p class="p-custom">{{page.author}}</p></span></div>
-<br/>
-<!-- Comments only for posts -->
-{% if page.path contains '_posts' %}
-    {% if site.disqus-shortname %}
-        {% include disqus.html %}
-    {% endif %}
-{% endif %}
+  <!-- Owl Carouselaaa -->
+  <link href="{{site.baseurl}}/assets/css/owl.theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles/xcode.css">
+  <link href="{{site.baseurl}}/assets/css/owl.carousel.css" rel="stylesheet">
+
+  <!-- Magnific-popup lightbox -->
+  <link href="{{site.baseurl}}/assets/css/magnific-popup.css" rel="stylesheet">
+
+  <!-- Simple text rotator -->
+  <link href="{{site.baseurl}}/assets/css/simpletextrotator.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link href="{{site.baseurl}}/assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+  <!-- Animate css -->
+  <link href="{{site.baseurl}}/assets/css/animate.css" rel="stylesheet">
+
+  <!-- Custom styles CSS -->
+  <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet" media="screen">
+
+  <!-- Github styles CSS -->
+  <link href="{{site.baseurl}}/assets/css/github.css" rel="stylesheet" media="screen">
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-79547237-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- Preloader -->
+
+    <!-- Navigation start -->
+
+    <nav class="navbar navbar-custom navbar-fixed-top navbar-color" role="navigation">
+      <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Burak Üstün</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{site.baseurl}}/#intro">home</a></li>
+            <li><a href="{{site.baseurl}}/#profile">Profile</a></li>
+            <li><a href="{{site.baseurl}}/#resume">Resume</a></li>
+            <li><a href="{{site.baseurl}}/#portfolio">Portfolio</a></li>
+            <li><a href="{{site.baseurl}}/#contact">Contact</a></li>
+            <li class="active"><a href="{{site.baseurl}}/categories">Notebook</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Navigation end -->
+
+    <!-- Profile section start -->
+
+    <section id="blog" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 col-xs-12 headline wow bounceInDown" style="text-align: left">
+            
+            <h1 class="post-headline">{{page.title}}</h1> 
+
+            {{content}}
+            <br/>
+            <div class="meta"><span><p>{{page.date | date: '%B %d, %Y'}}</p></span></div>
+            <div><span><p class="p-custom">{{page.author}}</p></span></div>
+            <br/>
+            <!-- Comments only for posts -->
+            {% if page.path contains '_posts' %}
+            {% if site.disqus-shortname %}
+            {% include disqus.html %}
+            {% endif %}
+            {% endif %}
+
+          </div>
+<!--
+          <div class="col-md-4 hidden-xs headline wow bounceInDown">
+              <h4>Latest Posts</h4>
+            {% for post in site.posts limit:10 %}
+                <p><li><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></li></p>
+            {% endfor %}
+          </div>
+        -->
+      </div><!-- .row -->
+
+    </div><!-- .container -->
+
+  </section>
+
+  <!-- Contact section end -->
+
+  <!-- Footer start -->
+
+  <footer id="footer">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p class="copy">
+            © 2017 Burak Üstün, All Rights Reserved.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p style="float: right;"> <i class="fa fa-fw fa-envelope-o"> </i><a href="mailto:burak@ustun.co">burak@ustun.co</a></p>
+        </div>
+
+      </div><!-- .row -->
+
+    </div><!-- .container -->
+
+  </footer>
+
+  <!-- Footer end -->
+
+</div><!-- .wrapper -->
+
+
+<script src="{{site.baseurl}}/assets/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="{{site.baseurl}}/assets/js/jquery-1.11.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="{{site.baseurl}}/assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Background slider -->
+<script src="{{site.baseurl}}/assets/js/jquery.backstretch.min.js"></script>
+<!-- OwlCarousel -->
+<script src="{{site.baseurl}}/assets/js/owl.carousel.min.js"></script>
+<!-- Modal for portfolio -->
+<script src="{{site.baseurl}}/assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Text rotator -->
+<script src="{{site.baseurl}}/assets/js/jquery.simple-text-rotator.min.js"></script>
+<!-- Waypoints -->
+<!-- CountTo  -->
+<script src="{{site.baseurl}}/assets/js/jquery.countTo.js"></script>
+<!-- WOW - Reveal Animations When You Scroll -->
+<script src="{{site.baseurl}}/assets/js/wow.min.js"></script>
+
+<script src="{{site.baseurl}}/assets/js/jquery.waypoints.js"></script>
+<!-- Smooth scroll -->
+<script src="{{site.baseurl}}/assets/js/smoothscroll.js"></script>
+<!-- Fitvids -->
+<script src="{{site.baseurl}}/assets/js/jquery.fitvids.js"></script>
+<!-- Custom scripts -->
+<script src="{{site.baseurl}}/assets/js/customBlog.js"></script>
+</html>
