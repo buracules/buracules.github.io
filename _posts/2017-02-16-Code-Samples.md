@@ -16,6 +16,7 @@ fpath: "http://allthingsiosandmac.ca/iPhone%206%20with%20MBPro%201800x1200.jpg"
 [Light Status Bar](#LightStatusBar)  
 [Dynamic Cell Height](#DynamicCellHeight)  
 [WSDL2Code](#WSDL2Code)  
+[AFNetworking Upload](#AFUpload)  
 
 
 
@@ -385,6 +386,43 @@ Ornek bir fonk. cagrisi :
 ```objectivec
 self.service = [[ServiceProxy alloc]initWithUrl:@"http://isilti.apphic.com/service.asmx" AndDelegate:self];
 [self.service getFList:1 :0];
-``
+```
+
+<a name="AFUpload"/> 
+
+---
+<br/>
+## AFNetworking Upload
+
+```objectivec
+    NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *filePath = [documentDir stringByAppendingPathComponent:_Path];
+    UIImage *Image= [UIImage imageWithContentsOfFile:filePath];
+    NSMutableDictionary* paramaters = [[NSMutableDictionary alloc] init];
+    [paramaters setObject:[NSString stringWithString:@"Foo" forKey:@"Bar"];
+    NSData *fileData = Image?UIImageJPEGRepresentation(Image, 0.5):nil;
+    NSError *error;
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"URL" parameters:paramaters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        if(fileData){
+            [formData appendPartWithFileData:fileData
+                                        name:@"uploadedfile"
+                                    fileName:@"img.jpeg"
+                                    mimeType:@"multipart/form-data"];
+        }
+    } error:&error];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    NSURLSessionUploadTask *uploadTask;
+    uploadTask = [manager uploadTaskWithStreamedRequest:request progress:^(NSProgress * _Nonnull uploadProgress) {
+        NSLog(@"Wrote %f", uploadProgress.fractionCompleted);
+    }
+                                      completionHandler:^(NSURLResponse * _Nonnull response, id _Nullable responseObject, NSError * _Nullable error) {
+                                         //Handle Response
+                                      }];
+    [uploadTask resume];
+}
+
+```
+
 
 
