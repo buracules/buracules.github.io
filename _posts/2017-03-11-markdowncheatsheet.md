@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Markdown Cheatsheet"
+title:  "Markdown"
 date:   2017-03-11
 categories: "CheatSheet"
 ---

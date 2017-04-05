@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Terminal Cheatsheet for Mac (Basics)"
+title:  "Terminal for Mac (Basics)"
 date:   2017-03-09
 categories: "CheatSheet"
 ---

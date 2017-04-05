@@ -59,7 +59,7 @@ p, blockquote, ol, dl, table, pre {
   margin: 15px 0; }
 
 hr {
-  background: transparent url("{{site.baseurl}}/assets/images/dirty-shade.png") repeat-x 0 0;
+  background: transparent url("/assets/images/dirty-shade.png") repeat-x 0 0;
   border: 0 none;
   color: #cccccc;
   height: 4px;
