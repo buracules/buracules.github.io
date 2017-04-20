@@ -1,14 +1,16 @@
 ---
-layout: post
+layout: postwithimage
 title:  "Design Patterns"
 author: "Burak Üstün"
 date:   2017-04-20
 categories: "Swift"
+fpath: "assets/images/Posts/pattern.jpg"
 ---
-
 
 Design Patterns implemented in Swift 3.0
 ========================================
+
+[Click for Original Post](https://github.com/ochococo/Design-Patterns-In-Swift)  
 A short cheat-sheet with Xcode 8.2 Playground ([Design-Patterns.playground.zip](https://raw.githubusercontent.com/ochococo/Design-Patterns-In-Swift/master/Design-Patterns.playground.zip)).
 
 👷 Project maintained by: [@nsmeme](http://twitter.com/nsmeme) (Oktawian Chojnacki)
