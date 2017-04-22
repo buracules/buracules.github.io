@@ -53,7 +53,7 @@ UILocalNotification için eşsiz identifier oluşturmak için :
     [dateFormatter setDateFormat:@"ddHHmm"];
     return [NSString stringWithFormat:@"%@%@-%@",kategoriAdi,sporAdi,[dateFormatter stringFromDate:date]];
 }
-``
+```
 
 UILocalNotification kurulu olup olmadığını kontrol etmek için :
 ```objectivec
