@@ -1,0 +1,186 @@
+---
+layout: post
+title: "Flip Card"
+description: "I've implemented a card flip in javascript, jquery, angularjs but now that I've been learning swift, I've been wondering how it's done. If you've been wondering the same thing, you're in luck. This post will guide you through the code necessary to make a card and flip it in swift. I have to give credit to [this](http://www.codingricky.com/flipping-cards-with-swift-and-uikit/) post, that I followed."
+date:   2017-05-16
+categories: "Swift"
+tags: [ios, animation, image, card, flip]
+---
+
+For Original Post [Click Here](https://gabrielghe.github.io/swift/2015/11/30/swift-flip-card)
+<!-- Overview -->
+<h3>Overview</h3>
+
+I've implemented a card flip in javascript, jquery, angularjs but now that I've been learning swift, I've been wondering how it's done. If you've been wondering the same thing, you're in luck. This post will guide you through the code necessary to make a card and flip it in swift. I have to give credit to [this](http://www.codingricky.com/flipping-cards-with-swift-and-uikit/) post, that I followed.
+
+<!-- Content -->
+<h3>Content</h3>
+
+<!-- Step 1 -->
+<h4>Step 1</h4>
+
+
+We first need to create the variables for the views.
+
+````swift
+class ViewController: UIViewController {
+    var cardView: UIView!
+    var front: UIImageView!
+    var back: UIImageView!
+}
+````
+
+
+
+<!-- Step 2 -->
+<h4>Step 2</h4>
+
+We then need to actually create the views.
+
+````swift
+class ViewController: UIViewController {
+
+    var cardView: UIView!
+    var front: UIImageView!
+    var back: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let width = self.view.frame.width * 0.8
+        let height = self.view.frame.height * 0.8
+        let rect = CGRectMake(0, 0, width, height)
+        
+        front = UIImageView(frame: rect)
+        front.image = UIImage(named: "front")
+        
+        back = UIImageView(frame: rect)
+        back.image = UIImage(named: "back")
+        
+        cardView = UIView(frame: rect)
+        cardView.addSubview(back)
+        self.view.addSubview(cardView)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        cardView.center = view.center
+    }
+}
+````
+
+<center><img src="assets/images/Posts/flipcard.png" float="center" /></center>
+
+
+<h4>Step 3</h4>
+
+We are displaying a card, but we need to flip it.
+
+To do that, we add a UITapGestureRecognizer
+
+````swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    let width = self.view.frame.width * 0.8
+    let height = self.view.frame.height * 0.8
+    let rect = CGRectMake(0, 0, width, height)
+    
+    let singleTap = UITapGestureRecognizer(target: self, action: Selector("tapped"))
+    singleTap.numberOfTapsRequired = 1
+    
+    front = UIImageView(frame: rect)
+    front.image = UIImage(named: "front")
+    
+    back = UIImageView(frame: rect)
+    back.image = UIImage(named: "back")
+    
+    cardView = UIView(frame: rect)
+    cardView.addGestureRecognizer(singleTap)
+    cardView.userInteractionEnabled = true
+    cardView.addSubview(back)
+    self.view.addSubview(cardView)
+}
+````
+
+We also need to create the tapped function. Which will use the `UIView.transitionFromView` method.
+
+```swift
+func tapped() {
+    var showingSide = front
+    var hiddenSide = back
+    if showingBack {
+        (showingSide, hiddenSide) = (back, front)
+    }
+    
+    UIView.transitionFromView(showingSide, 
+            toView: hiddenSide,
+            duration: 0.7,
+            options: UIViewAnimationOptions.TransitionFlipFromRight,
+            completion: nil)
+    
+    showingBack = !showingBack
+}
+```
+
+
+<h4>End Result</h4>
+
+````swift
+class ViewController: UIViewController {
+
+    var cardView: UIView!
+    var front: UIImageView!
+    var back: UIImageView!
+    var showingBack = true
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let width = self.view.frame.width * 0.8
+        let height = self.view.frame.height * 0.8
+        let rect = CGRectMake(0, 0, width, height)
+        
+        let singleTap = UITapGestureRecognizer(target: self, action: "tapped")
+        singleTap.numberOfTapsRequired = 1
+        
+        front = UIImageView(frame: rect)
+        front.image = UIImage(named: "front")
+        
+        back = UIImageView(frame: rect)
+        back.image = UIImage(named: "back")
+        
+        cardView = UIView(frame: rect)
+        cardView.addGestureRecognizer(singleTap)
+        cardView.userInteractionEnabled = true
+        cardView.addSubview(back)
+        self.view.addSubview(cardView)
+    }
+    
+    func tapped() {
+        var showingSide = front
+        var hiddenSide = back
+        if showingBack {
+            (showingSide, hiddenSide) = (back, front)
+        }
+        
+        UIView.transitionFromView(showingSide, 
+                toView: hiddenSide, 
+                duration: 0.7,
+                options: UIViewAnimationOptions.TransitionFlipFromRight,
+                completion: nil)
+        
+        showingBack = !showingBack
+    }
+    
+    override func viewWillLayoutSubviews() {
+        cardView.center = view.center
+    }
+}
+````
+
+
+<center><img src="assets/images/Posts/flipcard.gif" float="center" /></center>
+
+
+
+
