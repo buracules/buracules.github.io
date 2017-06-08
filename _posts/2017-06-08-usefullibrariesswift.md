@@ -578,24 +578,24 @@ With Chameleon, you can easily stop tinkering with RGB values, wasting hours fig
 
 > Device is a value-type replacement of UIDevice.
 
-*[**MGSwiperTableCell**](https://github.com/MortimerGoro/MGSwipeTableCell)
+* [**MGSwiperTableCell**](https://github.com/MortimerGoro/MGSwipeTableCell)
 
 > MGSwipeTableCell is an easy to use UITableViewCell subclass that allows to display swipeable buttons with a variety of transitions.
 This library is compatible with all the different ways to create a UITableViewCell: system predefined styles, programmatically created cells, cells loaded from a xib and prototype cells within a storyboard. You can use autolayout if you want.
 
-*[**Timepiece**](https://github.com/naoty/Timepiece)
+* [**Timepiece**](https://github.com/naoty/Timepiece)
 
 >Intuitive date handling in Swift
 
-*[**CtyptoSwift**](https://github.com/krzyzanowskim/CryptoSwift)
+* [**CtyptoSwift**](https://github.com/krzyzanowskim/CryptoSwift)
 
 >CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift
 
-*[**FSCalendar**](https://github.com/WenchaoD/FSCalendar)
+* [**FSCalendar**](https://github.com/WenchaoD/FSCalendar)
 
 >A fully customizable iOS calendar library, compatible with Objective-C and Swift
 
-*[**PromiseKit**](https://github.com/mxcl/PromiseKit)
+* [**PromiseKit**](https://github.com/mxcl/PromiseKit)
 
 
 
