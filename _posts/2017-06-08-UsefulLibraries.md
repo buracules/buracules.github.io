@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Useful Libraries for Swift 3.1"
+title: "Useful Libraries for Swift"
 date:   2017-06-08
 categories: "Swift"
 ---
@@ -523,8 +523,80 @@ SKPhotoBrowserOptions.bounceAnimation        = true  // default false
 ``` 
 
 ## Other Useful Libraries
-* [LNRSimpleNotifications](https://github.com/LISNR/LNRSimpleNotifications)
-* [BPStatusBarAlert](https://github.com/ppth0608/BPStatusBarAlert)
+* [**Charts**](https://github.com/danielgindi/Charts)
+
+* [**Moya**](https://github.com/Moya/Moya)
+
+>Network abstraction layer written in Swift.
+
+* [**LNRSimpleNotifications**](https://github.com/LISNR/LNRSimpleNotifications)
+
+> TSMessages is an amazingly powerful in-app notifications library but requires a lot of setup. LNRSimpleNotifications is a simplified version for the developer who wants beautiful in-app notifications in minutes.
+
+* [**BPStatusBarAlert**](https://github.com/ppth0608/BPStatusBarAlert)
+
+> BPStatusBarAlert is a library that allows you to easily make text-based alert that appear on the status bar and below navigation bar. 
+
+* [**IGListKit**](https://github.com/Instagram/IGListKit)
+
+> A data-driven UICollectionView framework for building fast and flexible lists.
+
+* [**Valet**](https://github.com/square/Valet)
+
+> Valet lets you securely store data in the iOS or OS X Keychain without knowing a thing about how the Keychain works. It’s easy. We promise.
+
+* [**Texture**](https://github.com/texturegroup/texture/)
+
+* [**DZNEmptyDataSet**](https://github.com/dzenbot/DZNEmptyDataSet)
+
+* [**Chameleon**](https://github.com/ViccAlexander/Chameleon)
+
+> Chameleon is a lightweight, yet powerful, color framework for iOS (Objective-C & Swift). It is built on the idea that software applications should function effortlessly while simultaneously maintaining their beautiful interfaces.
+With Chameleon, you can easily stop tinkering with RGB values, wasting hours figuring out the right color combinations to use in your app, and worrying about whether your text will be readable on the various background colors of your app.
+
+* [**PermissionScope**](https://github.com/nickoneill/PermissionScope)
+
+> Inspired by (but unrelated to) Periscope's permission control, PermissionScope is a Swift framework for intelligently requesting permissions from users. It contains not only a simple UI to request permissions but also a unified permissions API that can tell you the status of any given system permission or easily request them.
+
+* [**FileKit**](https://github.com/nvzqz/FileKit)
+
+> FileKit is a Swift framework that allows for simple and expressive file management.
+
+* [**SwiftyJson**](https://github.com/SwiftyJSON/SwiftyJSON)
+
+>SwiftyJSON makes it easy to deal with JSON data in Swift.
+
+* [**SwiftyUserDefaults**](https://github.com/radex/SwiftyUserDefaults)
+
+> SwiftyUserDefaults makes user defaults enjoyable to use by combining expressive Swifty API with the benefits of static typing. Define your keys in one place, use value types easily, and get extra safety and convenient compile-time checks for free.
+
+* [**Hedwig**](https://github.com/onevcat/Hedwig)
+
+>Hedwig is a Swift package which supplies a set of high level APIs to allow you sending email to an SMTP server easily. If you are planning to send emails from your next amazing Swift server app, Hedwig might be a good choice.
+
+* [**DeviceKit**](https://github.com/dennisweissmann/DeviceKit)
+
+> Device is a value-type replacement of UIDevice.
+
+*[**MGSwiperTableCell**](https://github.com/MortimerGoro/MGSwipeTableCell)
+
+> MGSwipeTableCell is an easy to use UITableViewCell subclass that allows to display swipeable buttons with a variety of transitions.
+This library is compatible with all the different ways to create a UITableViewCell: system predefined styles, programmatically created cells, cells loaded from a xib and prototype cells within a storyboard. You can use autolayout if you want.
+
+*[**Timepiece**](https://github.com/naoty/Timepiece)
+
+>Intuitive date handling in Swift
+
+*[**CtyptoSwift**](https://github.com/krzyzanowskim/CryptoSwift)
+
+>CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift
+
+*[**FSCalendar**](https://github.com/WenchaoD/FSCalendar)
+
+>A fully customizable iOS calendar library, compatible with Objective-C and Swift
+
+*[**PromiseKit**](https://github.com/mxcl/PromiseKit)
+
 
 
 
