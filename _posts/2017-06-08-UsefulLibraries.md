@@ -91,6 +91,11 @@ https://github.com/jonkykong/SideMenu
 For usage and more information [click here!](https://github.com/jonkykong/SideMenu)
 
 ## Facebook-POP
+
+![pop](assets/images/Posts/hero1.gif)
+
+Pop is an extensible animation engine for iOS, tvOS, and OS X. In addition to basic static animations, it supports spring and decay dynamic animations, making it useful for building realistic, physics-based interactions. The API allows quick integration with existing Objective-C or Swift codebases and enables the animation of any property on any object. It's a mature and well-tested framework that drives all the animations and transitions in Paper.
+
 For usage and information [click here!](https://github.com/facebook/pop)
 
 ## Hero
