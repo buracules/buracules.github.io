@@ -7,7 +7,7 @@ categories: "Swift"
 
 
 ## Alamofire
-https://github.com/Alamofire/Alamofire
+https://github.com/Alamofire/Alamofire <br />
 `pod 'Alamofire', '~> 4.4'`
 ### Usage
 * **Making a Request**
@@ -38,7 +38,7 @@ In the above example, the responseJSON handler is appended to the Request to be 
 For more [click here!](https://github.com/Alamofire/Alamofire)
 
 ## Kingfisher
-https://github.com/onevcat/Kingfisher
+https://github.com/onevcat/Kingfisher <br />
 `pod 'Kingfisher', '~> 3.10'`
 
 ### Features
@@ -75,7 +75,7 @@ imageView.kf.setImage(with: url,
 For more [click here!](https://github.com/onevcat/Kingfisher/wiki/Kingfisher-3.0-Migration-Guide)
 
 ## SideMenu
-https://github.com/jonkykong/SideMenu
+https://github.com/jonkykong/SideMenu<br />
 `pod 'SideMenu', '~> 2.3'`
 
 ### Features
@@ -99,7 +99,7 @@ Pop is an extensible animation engine for iOS, tvOS, and OS X. In addition to ba
 For usage and information [click here!](https://github.com/facebook/pop)
 
 ## Hero
-https://github.com/lkzhao/Hero
+https://github.com/lkzhao/Hero<br />
 `pod 'Hero', '~> 0.3'`
 
 Hero is a library for building iOS view controller transitions. It provides a layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers.
@@ -125,7 +125,7 @@ For usage and more information [click here!](https://github.com/lkzhao/Hero)
 
 
 ## NVActivityIndicatorView
-https://github.com/ninjaprox/NVActivityIndicatorView
+https://github.com/ninjaprox/NVActivityIndicatorView<br />
 `pod 'NVActivityIndicatorView', '~> 3.6'`
 
 ### Introduction
@@ -320,7 +320,7 @@ NVActivityIndicatorView.DEFAULT_BLOCKER_MESSAGE_FONT = UIFont.boldSystemFont(ofS
 ```
 
 ## SKPhotoBrowser
-https://github.com/suzuki-0000/SKPhotoBrowser
+https://github.com/suzuki-0000/SKPhotoBrowser<br />
 `pod 'SKPhotoBrowser',           '~> 4.0'`
 
 Simple PhotoBrowser/Viewer inspired by facebook, twitter photo browsers written by swift, based on IDMPhotoBrowser, MWPhotoBrowser.
@@ -335,7 +335,7 @@ Simple PhotoBrowser/Viewer inspired by facebook, twitter photo browsers written 
 * Handling and caching photos from web
 * Landscape handling
 * Delete photo support(by offbye). By set displayDelete=true show a delete icon in statusbar, deleted indexes can be obtain from delegate func didDeleted
-* 
+
 ### Version vs Swift version.
 
 Below is a table that shows which version of SKPhotoBrowser you should use for your Swift version.
