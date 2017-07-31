@@ -2,7 +2,9 @@
 layout: post
 title: "BUSimplePopup"
 date:   2017-06-09
-categories: "Swift"
+categories: "Pods"
+author: "Burak Üstün"
+tags: [cocoapods, swift, ios, popup]
 ---
 
 [![CI Status](http://img.shields.io/travis/burakustn@gmail.com/BUSimplePopup.svg?style=flat)](https://travis-ci.org/burakustn@gmail.com/BUSimplePopup)

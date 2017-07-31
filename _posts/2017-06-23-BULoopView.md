@@ -2,7 +2,9 @@
 layout: post
 title: "BULoopView"
 date:   2017-06-23
-categories: "Swift"
+categories: "Pods"
+author: "Burak Üstün"
+tags: [cocoapods, swift, ios, test1, test2, test5, test6, tet, asd, asdasd, asdasd]
 ---
 
 [![CI Status](http://img.shields.io/travis/burakustn@gmail.com/BULoopView.svg?style=flat)](https://travis-ci.org/burakustn@gmail.com/BULoopView)

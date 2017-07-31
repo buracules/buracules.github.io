@@ -805,11 +805,14 @@ h3 > .fa {
     }
     #tag ul{
       list-style: none;
+      padding-left: 0px;
     }
 
     #tag ul li{
-      float: left;
-      margin-left: 10px;
+      float: right;
+      margin-left: 0px;
+      margin-right: 10px;
+      margin-bottom: 10px;
       border-radius: 5px;
       display: block;
       height: 20x;
@@ -820,3 +823,4 @@ h3 > .fa {
       text-align: center;
       background-color: #ef4855;
     }
+

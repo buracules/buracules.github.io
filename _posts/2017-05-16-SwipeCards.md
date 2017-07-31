@@ -2,6 +2,7 @@
 layout: post
 title: "Swipe Cards"
 date:   2017-05-16
+author: "Burak Üstün"
 categories: "Swift"
 ---
 
