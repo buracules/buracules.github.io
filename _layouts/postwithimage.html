@@ -116,7 +116,16 @@ layout: compress
 
             {{content}}
             <br/>
-            <div class="meta"><span><p>{{page.date | date: '%B %d, %Y'}}</p></span></div>
+                        <div id="tag" class="col-lg-12 col-md-12 col-xs-12">
+              <ul>
+                {% for tag in page.tags %}
+                <li>
+                  <a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <!--<div class="meta"><span><p>{{page.date | date: '%B %d, %Y'}}</p></span></div>-->
             <div><span><p class="p-custom">{{page.author}}</p></span></div>
             <br/>
             <!-- Comments only for posts -->
