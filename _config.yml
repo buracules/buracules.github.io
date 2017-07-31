@@ -2,7 +2,7 @@
 
 title: Blog - Burak Üstün
 baseurl: # name of the repository
-email: your@email.com
+email: burak@ustun.co
 
 
 
@@ -46,7 +46,13 @@ compress_html:
 sass:
  style: compressed
 
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
 
 
 
-gems: [jekyll-seo-tag, jekyll-paginate ,gemoji, jekyll-sitemap]
+
+
+gems: [jekyll-seo-tag, jekyll-paginate ,gemoji, jekyll-sitemap, jekyll/tagging]
+

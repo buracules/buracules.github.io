@@ -3,6 +3,7 @@ layout: post
 title:  "Image Picker View"
 date:   2017-02-15
 categories: Swift
+tags: [ios, image, swift]
 ---
 
 Photo albüm açma fonksiyonu iOS 10 sonrasında bunu kullanmak için **info.plist** dosyasına `Privacy - Photo Library Usage Description`  eklenmesi gerekiyor.

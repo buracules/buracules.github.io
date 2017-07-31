@@ -796,3 +796,27 @@ h3 > .fa {
 	}
 
 }
+
+
+    #tag ul li a{
+      color: #fafafa;
+      font-weight: bold;
+
+    }
+    #tag ul{
+      list-style: none;
+    }
+
+    #tag ul li{
+      float: left;
+      margin-left: 10px;
+      border-radius: 5px;
+      display: block;
+      height: 20x;
+      padding: 5px;
+      padding-left: 12px;
+      padding-right: 12px;
+      line-height: 20px;
+      text-align: center;
+      background-color: #ef4855;
+    }

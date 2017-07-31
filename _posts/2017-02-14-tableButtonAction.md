@@ -4,6 +4,7 @@ title:  "Table Button Action"
 date:   2017-02-15
 categories: Swift
 author: "Burak Üstün"
+tags: [table, swift]
 ---
 
 You need to add target for that button.
