@@ -1,7 +1,7 @@
 ---
 title: Burak Üstün - Blog
 layout: default
-permalink: /Blog/
+permalink: /blog/
 published: true
 ---
 <link href="{{site.baseurl}}/assets/css/github.css" rel="stylesheet" media="screen">
