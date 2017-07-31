@@ -1,7 +1,7 @@
 ---
-title: About Hagura
+title: Burak Üstün - Blog
 layout: default
-permalink: /categories/
+permalink: /Blog/
 published: true
 ---
 <link href="{{site.baseurl}}/assets/css/github.css" rel="stylesheet" media="screen">
