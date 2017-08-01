@@ -3,7 +3,7 @@ layout: post
 title:  "Fmdb Sample"
 date:   2017-02-16
 categories: Swift
-tags: [ios, Database, swift]
+tags: [database, swift]
 ---
 
 ```swift

@@ -4,7 +4,7 @@ title:  "Famous Quotes"
 date:   2017-02-19
 categories: "Miscellaneous"
 fpath: "assets/images/Posts/quotes.jpeg"
-tags: [Miscellaneous]
+tags: [misc]
 ---
 
 | Quote        | Author           | 

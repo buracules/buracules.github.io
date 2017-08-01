@@ -4,6 +4,8 @@ title:  "UITextView Placeholder"
 author: "Burak Üstün"
 date:   2017-04-26
 categories: "Swift"
+author: "Burak Üstün"
+tags: [extension, swift]
 ---
 
 

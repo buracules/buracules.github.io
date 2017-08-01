@@ -5,6 +5,8 @@ author: "Burak Üstün"
 date:   2017-04-20
 categories: "Swift"
 fpath: "assets/images/Posts/pattern.jpg"
+author: "Burak Üstün"
+tags: [swift, design ,pattern]
 ---
 
 Design Patterns implemented in Swift 3.0

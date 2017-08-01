@@ -4,7 +4,7 @@ title: "BULoopView"
 date:   2017-06-23
 categories: "Pods"
 author: "Burak Üstün"
-tags: [cocoapods, swift, ios]
+tags: [cocoapods, swift, scrollview]
 ---
 
 [![CI Status](http://img.shields.io/travis/burakustn@gmail.com/BULoopView.svg?style=flat)](https://travis-ci.org/burakustn@gmail.com/BULoopView)

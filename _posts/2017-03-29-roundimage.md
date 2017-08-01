@@ -4,6 +4,8 @@ title:  "Round Image IBDesignable"
 author: "Burak Üstün"
 date:   2017-03-29
 categories: "Swift"
+author: "Burak Üstün"
+tags: [ui, swift]
 ---
 
 

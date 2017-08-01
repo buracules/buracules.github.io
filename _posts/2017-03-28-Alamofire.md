@@ -5,6 +5,8 @@ author: "Burak Üstün"
 date:   2017-03-24
 categories: "Swift"
 fpath: "assets/images/Posts/Alamofire.jpg"
+author: "Burak Üstün"
+tags: [webservice, JSON, swift]
 ---
 
 #### Örnek Class : [Post.swift]

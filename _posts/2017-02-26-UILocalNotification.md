@@ -4,6 +4,8 @@ title:  "UILocalNotification"
 author: "Burak Üstün"
 date:   2017-03-24
 categories: "Objective-C"
+author: "Burak Üstün"
+tags: [notification, objective-c]
 ---
 
 Sabitler:

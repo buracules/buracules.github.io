@@ -3,6 +3,8 @@ layout: post
 title:  "Delete Git History"
 date:   2017-03-09
 categories: "Terminal"
+author: "Burak Üstün"
+tags: [commandline]
 ---
 
 

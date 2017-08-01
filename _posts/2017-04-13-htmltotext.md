@@ -4,6 +4,8 @@ title:  "Html to Text"
 author: "Burak Üstün"
 date:   2017-04-13
 categories: "Swift"
+author: "Burak Üstün"
+tags: [extension, swift]
 ---
 
  String+HtmltoText.swift adında bir dosya oluşturun.

@@ -3,7 +3,7 @@ layout: post
 title:  "Awesome iOS Animations"
 date:   2017-02-19
 categories: Swift
-tags: [ios, Animation, swift]
+tags: [animation, swift]
 ---
 For original post [click here](https://github.com/ameizi/awesome-ios-animation "Awesome iOS Animations")
 

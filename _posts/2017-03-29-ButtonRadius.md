@@ -4,6 +4,8 @@ title:  "Button Radius"
 author: "Burak Üstün"
 date:   2017-03-29
 categories: "Swift"
+author: "Burak Üstün"
+tags: [swift, ui]
 ---
 
 Kullanmak için roundButton.swift adında bir dosya oluşturun ve aşağıdaki kodu içerisine kopyalayın.

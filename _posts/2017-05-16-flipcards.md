@@ -4,7 +4,7 @@ title: "Flip Card"
 description: "I've implemented a card flip in javascript, jquery, angularjs but now that I've been learning swift, I've been wondering how it's done. If you've been wondering the same thing, you're in luck. This post will guide you through the code necessary to make a card and flip it in swift. I have to give credit to [this](http://www.codingricky.com/flipping-cards-with-swift-and-uikit/) post, that I followed."
 date:   2017-05-16
 categories: "Swift"
-tags: [ios, animation, image, card, flip]
+tags: [swift, animation]
 ---
 
 For Original Post [Click Here](https://gabrielghe.github.io/swift/2015/11/30/swift-flip-card)

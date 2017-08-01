@@ -4,7 +4,7 @@ title: "Useful Libraries for Swift"
 date:   2017-06-08
 author: "Burak Üstün"
 categories: "Swift"
-tags: [cocoapods, swift, ios, library]
+tags: [cocoapods, swift, library]
 ---
 
 

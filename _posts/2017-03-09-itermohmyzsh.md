@@ -4,6 +4,8 @@ title:  "iTerm2 ve Oh My Zsh kurulumu (macOS)"
 date:   2017-03-09
 categories: "Terminal"
 fpath: "http://www.gm2dev.com/wp-content/uploads/2016/06/test.jpg"
+author: "Burak Üstün"
+tags: [commandline]
 ---
 
 ## Homebrew
