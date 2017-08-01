@@ -824,3 +824,37 @@ h3 > .fa {
       background-color: #ef4855;
     }
 
+
+    #tags ul li a{
+      color: #fafafa;
+      font-weight: bold;
+
+    }
+    #tags ul{
+      list-style: none;
+      padding-left: 0px;
+      margin-bottom: 50px; 
+    }
+
+    #tags ul li{
+      float: left;
+      margin-left: 0px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      display: block;
+      height: 20x;
+      padding: 5px;
+      padding-left: 12px;
+      padding-right: 12px;
+      line-height: 20px;
+      text-align: center;
+      background-color: #ef4855;
+    }
+
+    .badge{
+    	background-color: white;
+    	color:#ef4855;
+    	
+    }
+
