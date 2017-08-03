@@ -1,5 +1,5 @@
 ---
-title: About Hagura
+title: All Posts
 layout: default
 permalink: /all/
 published: true

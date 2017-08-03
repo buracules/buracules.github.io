@@ -3,6 +3,7 @@ title: Tags
 layout: default
 permalink: /tags/
 published: true
+fpath: /assets/images/bg5.jpg
 ---
 <link href="{{site.baseurl}}/assets/css/github.css" rel="stylesheet" media="screen">
 <div id="tags" style="float: left;">

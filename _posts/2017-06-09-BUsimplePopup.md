@@ -3,6 +3,7 @@ layout: post
 title: "BUSimplePopup"
 date:   2017-06-09
 categories: "Pods"
+permalink: /BUSimplePopup/
 author: "Burak Üstün"
 tags: [cocoapods, swift, popup]
 ---

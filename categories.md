@@ -1,10 +1,11 @@
 ---
-title: Burak Üstün - Blog
+title: Blog
 layout: default
 permalink: /blog/
 published: true
+fpath: /assets/images/bg5.jpg
 ---
-<link href="{{site.baseurl}}/assets/css/github.css" rel="stylesheet" media="screen">
+<div class="col-md-12 headline">
 <h1 style="text-align: center; font-size: 40px;">Categories</h1><br/>
 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
 {% assign sorted_categories = site.categories | sort %}
@@ -21,4 +22,5 @@ published: true
 	</div>
 {% endfor %}
 </div>
+<div>
 

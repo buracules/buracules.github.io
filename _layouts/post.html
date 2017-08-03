@@ -3,28 +3,16 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html>
-<head>
     {% include head.html %}
-  <!-- Github styles CSS -->
-  <link href="{{site.baseurl}}/assets/css/github.css" rel="stylesheet" media="screen">
-</head>
 <body>
 
   <div class="wrapper">
-
-    <!-- Preloader -->
-
-    <!-- Navigation start -->
 
     <nav class="navbar navbar-custom navbar-fixed-top navbar-color" role="navigation">
       <div class="container">
         {% include navbar.html %}
       </div>
     </nav>
-
-    <!-- Navigation end -->
-
-    <!-- Profile section start -->
 
     <section id="blog" class="section">
 
@@ -61,24 +49,11 @@ layout: compress
             {% endif %}
 
           </div>
-<!--
-          <div class="col-md-4 hidden-xs headline wow bounceInDown">
-              <h4>Latest Posts</h4>
-            {% for post in site.posts limit:10 %}
-                <p><li><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></li></p>
-            {% endfor %}
-          </div>
-        -->
       </div><!-- .row -->
 
     </div><!-- .container -->
 
   </section>
-
-  <!-- Contact section end -->
-
-  <!-- Footer start -->
-
     {% include footer.html %}
 <!-- Custom scripts -->
 <script src="{{site.baseurl}}/assets/js/customBlog.js"></script>

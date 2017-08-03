@@ -3,22 +3,16 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html>
-<head>
   {% include head.html %}
-</head>
 <body>
 
   <div class="wrapper">
-
-    <!-- Preloader -->
-
     <div id="preloader">
       <div id="status">
         <div class="status-mes"><h4>Burak Üstün</h4></div>
       </div>
     </div>
 
-    <!-- Navigation start -->
 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
       <div class="container">
@@ -26,9 +20,6 @@ layout: compress
       </div>
     </nav>
 
-    <!-- Navigation end -->
-
-    <!-- Intro section start -->
 
     <section id="intro" class="section" style="padding-bottom: 30px; ">
 
@@ -39,7 +30,7 @@ layout: compress
           <div class="col-md-12" style="padding-top: 300px;">
 
             <div class="hello wow bounceInDown">
-              <h1 >Hello, This is my Blog</h1>
+              <h1 >{{ page.title }}</h1>
               <h3><span class="rotate">Objective-C | Swift</span></h3>
             </div>
 
@@ -50,15 +41,6 @@ layout: compress
       </div><!-- .container -->
 
     </section>
-
-    <!-- Intro section end -->
-
-    <!-- Profile contact callout section -->
-
-
-    <!-- Profile contact callout section -->
-
-    <!-- Profile section start -->
 
     <section id="blog" class="section">
 
@@ -77,21 +59,13 @@ layout: compress
 
     </section>
 
-
-    <!-- Contact section end -->
-
-    <!-- Footer start -->
-
  {% include footer.html %}
 <!-- Custom scripts -->
 <script src="{{site.baseurl}}/assets/js/customNotebook.js"></script>
 
-
-
 <script type="text/javascript">
   $(document).ready(function() {
-
-    $('#intro').backstretch(['/assets/images/bg5.jpg']);
+    $('#intro').backstretch('{{page.fpath}}');
   });
 </script>
 

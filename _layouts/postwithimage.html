@@ -1,97 +1,26 @@
 ---
-layout: compress
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-<head>
-    {% include head.html %}
-  <!-- Github styles CSS -->
-  <link href="{{site.baseurl}}/assets/css/github.css" rel="stylesheet" media="screen">
-</head>
-<body>
+<div class="col-md-12 col-xs-12 headline" style="text-align: left">
+  {{content}}
+  <br/>
+  <div id="tag" class="col-lg-12 col-md-12 col-xs-12">
+    <ul>
+      {% for tag in page.tags %}
+      <li>
+        <a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <!--<div class="meta"><span><p>{{page.date | date: '%B %d, %Y'}}</p></span></div>-->
+  <div><span><p class="p-custom">{{page.author}}</p></span></div>
+  <br/>
+  <!-- Comments only for posts -->
+  {% if page.path contains '_posts' %}
+  {% if site.disqus-shortname %}
+  {% include disqus.html %}
+  {% endif %}
+  {% endif %}
 
-  <div class="wrapper">
-    <!-- Navigation start -->
-
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-      <div class="container">
-        {% include navbar.html %}
-      </div>
-    </nav>
-
-    <!-- Navigation end -->
-
-    <section id="intro" class="section" style="padding-bottom: 30px;">
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-12" style="padding-top: 100px">
-
-            <div class="hello wow bounceInDown" style="margin-bottom: 50px">
-              <h1 style="font-size:75px">{{page.title}}</h1>
-              <h4>{{page.categories}}</h4>
-            </div>
-          </div>
-
-        </div><!-- .row -->
-
-      </div><!-- .container -->
-
-    </section>
-    <!-- Profile section start -->
-
-    <section id="blog" class="section">
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-12 col-xs-12 headline" style="text-align: left">
-            
-
-            {{content}}
-            <br/>
-                        <div id="tag" class="col-lg-12 col-md-12 col-xs-12">
-              <ul>
-                {% for tag in page.tags %}
-                <li>
-                  <a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a>
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
-            <!--<div class="meta"><span><p>{{page.date | date: '%B %d, %Y'}}</p></span></div>-->
-            <div><span><p class="p-custom">{{page.author}}</p></span></div>
-            <br/>
-            <!-- Comments only for posts -->
-            {% if page.path contains '_posts' %}
-            {% if site.disqus-shortname %}
-            {% include disqus.html %}
-            {% endif %}
-            {% endif %}
-
-          </div>
-
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-
-  </section>
-
-  <!-- Contact section end -->
-
-  <!-- Footer start -->
-
- {% include footer.html %}
-<!-- Custom scripts -->
-<script src="{{site.baseurl}}/assets/js/customNotebook.js"></script>
-
-<script type="text/javascript">
-  $(document).ready(function() {
-
-    $('#intro').backstretch('{{page.fpath}}');
-  });
-</script>
-</html>
+</div>

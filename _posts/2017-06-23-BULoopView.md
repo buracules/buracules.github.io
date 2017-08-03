@@ -3,6 +3,7 @@ layout: post
 title: "BULoopView"
 date:   2017-06-23
 categories: "Pods"
+permalink: /BULoopView/
 author: "Burak Üstün"
 tags: [cocoapods, swift, scrollview]
 ---
