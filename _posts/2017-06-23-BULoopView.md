@@ -99,6 +99,17 @@ You can customize everything below
 
 ```
 
+You can handle the click event using BULoopViewDelegate's didSelectIndexAt method.
+
+```swift
+    extension SampleViewController : BULoopViewDelegate{
+        func didSelectIndexAt(Index: Int) {
+            print("Selected Index : \(Index)")
+        }
+    }
+
+```
+
 ## Installation
 
 BUSimplePopup is available through [CocoaPods](http://cocoapods.org). To install
@@ -113,5 +124,7 @@ pod "BULoopView"
 Burak Üstün  
 Burak@Ustun.co  
 Twitter.com/burakustn  
+Github.com/burakustn
+
 ## License
 BULoopView is available under the MIT license. See the LICENSE file for more info.
