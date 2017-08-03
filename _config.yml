@@ -51,8 +51,5 @@ tag_page_dir: tag
 tag_permalink_style: pretty
 
 
-
-
-
-plugins: [jekyll-seo-tag, jekyll-paginate ,gemoji, jekyll-sitemap, jekyll/tagging]
+gems: [jekyll-seo-tag, jekyll-paginate ,gemoji, jekyll-sitemap]
 
