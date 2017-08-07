@@ -29,7 +29,7 @@
 			}
 		});
 
-		$('a[href*=#]').bind("click", function(e){
+		$('a#brand').bind("click", function(e){
 			var anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $(anchor.attr('href')).offset().top
@@ -39,6 +39,7 @@
 
 
 		var navbar = $('.navbar');
+		var searchInput = $('.search-input');
 		var navHeight = navbar.height();
 
 		$(window).scroll(function() {
