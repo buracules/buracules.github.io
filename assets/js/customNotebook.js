@@ -45,9 +45,11 @@
 		$(window).scroll(function() {
 			if($(this).scrollTop() >= navHeight) {
 				navbar.addClass('navbar-color');
+				searchInput.addClass('navbar-color');
 			}
 			else {
 				navbar.removeClass('navbar-color');
+				searchInput.removeClass('navbar-color');
 			}
 		});
 

@@ -11,12 +11,23 @@
 
     var searchToggle = $('#search-toggle')
     searchToggle.on('click', function(e) {
+      e.stopPropagation()
+      if(!searchInputElem.hasClass('open')) {
+        searchInputElem.focus()
+      }
       searchInputElem.toggleClass('open')
-      searchInputElem.focus()
+      
     })
 
     searchInputElem.on('focus', function(e) {
-      $('.dropdown-menu').addClass('show')
+      resultsElem.addClass('show')
+    })
+
+    searchInputElem.on('blur', function(e) {
+      setTimeout(function(){
+      resultsElem.removeClass('show')
+
+      },1000);
     })
     
     // searchInputElem.onkeyup = function() {
