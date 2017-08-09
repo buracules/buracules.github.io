@@ -2,7 +2,7 @@
 layout: post
 title:  "Markdown"
 date:   2017-03-11
-categories: "CheatSheet"
+categories: "Miscellaneous"
 ---
 ##### Table of Contents  
 [Headers](#headers)  

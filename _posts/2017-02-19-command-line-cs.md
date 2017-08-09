@@ -2,7 +2,7 @@
 layout: post
 title:  "Terminal for Mac (Basics)"
 date:   2017-03-09
-categories: "CheatSheet"
+categories: "Miscellaneous"
 tags: [commandline]
 ---
 ### SHORTCUTS

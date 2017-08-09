@@ -2,7 +2,7 @@
 layout: postwithimage
 title:  "XCode"
 date:   2017-04-05
-categories: "CheatSheet"
+categories: "Miscellaneous"
 fpath: "assets/images/bg2.jpg"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "iTerm 2 & Oh-My-Zsh Kurulumu"
 date:   2017-03-09
-categories: "Terminal"
+categories: "Miscellaneous"
 
 ---
 
