@@ -4,6 +4,7 @@ layout: default
 permalink: /blog/
 published: true
 fpath: /assets/images/bg5.jpg
+rotate: "Objective-C | Swift"
 ---
 <div class="col-md-12 headline">
 <h1 style="text-align: center; font-size: 40px;">Categories</h1><br/>
