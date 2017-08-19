@@ -1,3 +1,57 @@
+
+
+.btn-default {
+  background: #EEEEEE;
+}
+
+.btn-facebook {
+  background: transparent;
+  font-size: 15px;
+  font-weight: 3;
+  width: 60px;
+  border: 2px solid #3B5998;
+  color:#3B5998;
+  padding: 5px 15px;
+}
+
+.btn-facebook:hover, .btn-facebook:focus, .btn-facebook:active, .btn-facebook.active {
+  background: #3B5998;
+  border: 2px solid #3B5998;
+  color: #FFF;
+}
+
+.btn-twitter {
+  background: transparent;
+  font-size: 15px;
+  font-weight: 3;
+  border: 2px solid #4099FF;
+  width: 60px;
+  color: #4099FF;
+  padding: 5px 15px;
+}
+
+.btn-twitter:hover, .btn-twitter:focus, .btn-twitter:active, .btn-twitter.active {
+  background: #4099FF;
+  border: 2px solid #4099FF;
+  color: #FFF;
+}
+
+.btn-googleplus {
+  background: transparent;
+  font-size: 15px;
+  font-weight: 3;
+  width: 60px;
+  border: 2px solid #d34836;
+  color:#d34836;
+  padding: 5px 15px;
+}
+
+.btn-googleplus:hover, .btn-googleplus:focus, .btn-googleplus:active, .btn-googleplus.active {
+  background: #d34836;
+  border: 2px solid #d34836;
+  color: #FFF;
+}
+
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
   color: #666;
 }
@@ -51,56 +105,3 @@
   padding-bottom: 5px
 }
 
-/* Button types*/
-
-.btn-default {
-  background: #EEEEEE;
-}
-
-.btn-facebook {
-  background: transparent;
-  font-size: 15px;
-  font-weight: 3;
-  width: 60px;
-  border: 2px solid #3B5998;
-  color:#3B5998;
-  padding: 5px 15px;
-}
-
-.btn-facebook:hover, .btn-facebook:focus, .btn-facebook:active, .btn-facebook.active {
-  background: #3B5998;
-  border: 2px solid #3B5998;
-  color: #FFF;
-}
-
-.btn-twitter {
-  background: transparent;
-  font-size: 15px;
-  font-weight: 3;
-  border: 2px solid #4099FF;
-  width: 60px;
-  color: #4099FF;
-  padding: 5px 15px;
-}
-
-.btn-twitter:hover, .btn-twitter:focus, .btn-twitter:active, .btn-twitter.active {
-  background: #4099FF;
-  border: 2px solid #4099FF;
-  color: #FFF;
-}
-
-.btn-googleplus {
-  background: transparent;
-  font-size: 15px;
-  font-weight: 3;
-  width: 60px;
-  border: 2px solid #d34836;
-  color:#d34836;
-  padding: 5px 15px;
-}
-
-.btn-googleplus:hover, .btn-googleplus:focus, .btn-googleplus:active, .btn-googleplus.active {
-  background: #d34836;
-  border: 2px solid #d34836;
-  color: #FFF;
-}
