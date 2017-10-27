@@ -1,7 +1,7 @@
 ### your site title here
 
 title: Blog - Burak Üstün
-baseurl: # name of the repository
+baseurl: #
 email: burak@ustun.co
 
 
@@ -47,5 +47,5 @@ sass:
  style: compressed
 
 
-gems: [jekyll-seo-tag, jekyll-paginate ,gemoji, jekyll-sitemap]
+plugins: [jekyll-seo-tag, jekyll-paginate ,gemoji, jekyll-sitemap]
 
