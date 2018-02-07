@@ -4,7 +4,7 @@ title:  "Terminal for Mac (Basics)"
 date:   2017-03-09
 categories: "Miscellaneous"
 tags: [commandline]
-permalink: /commandline/
+permalink: /commandline
 ---
 ### SHORTCUTS
 
