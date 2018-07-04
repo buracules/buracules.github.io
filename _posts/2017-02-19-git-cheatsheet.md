@@ -87,3 +87,40 @@ tags: [commandline]
 | `$ git reset --hard <commit>` | Reset your HEAD pointer to a previus commit and discard all changes since then |
 | `$ git reset <commit>` | Reset your HEAD pointer to a previus commit and preserve all changes as unstaged changes |
 | `$ git reset --keep <commit>` |Reset your HEAD pointer to a previus commit and preserve uncommitted local changes |
+
+
+## GIT FLOW
+
+`$ git flow init`
+
+## FEATURE
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| `$ git flow feature [list] [-v]` | |
+| `$ git flow feature start [-F] <name> [<base>]` | |
+| `$ git flow feature finish [-rFk] <name|nameprefix>` | |
+| `$ git flow feature publish <name>` | |
+| `$ git flow feature track <name>` | |
+| `$ git flow feature diff [<name|nameprefix>]` |  |
+| `$ git flow feature rebase [-i] [<name|nameprefix>]` ||
+| `$ git flow feature checkout [<name|nameprefix>]` ||
+| `$ git flow feature pull <remote> [<name>]` ||
+
+## RELEASE
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| `$ git flow release [list] [-v]` | |
+| `$ git flow release start [-F] <version>` | |
+| `$ git flow release finish [-Fsumpk] <version>` | |
+| `$ git flow release publish <name>` | |
+| `$ git flow release track <name>` | |
+
+## HOTFIX
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| `$ git flow hotfix [list] [-v]` | |
+| `$ git flow hotfix start [-F] <version> [<base>]` | |
+| `$ git flow hotfix finish [-Fsumpk] <version>` | |
